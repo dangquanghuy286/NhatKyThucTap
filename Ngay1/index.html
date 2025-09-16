@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Example</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome để dùng icon giỏ hàng -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Cart Icon -->
+    <div class="cart-icon" onclick="toggleCart()">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span id="cartCount">0</span>
+    </div>
+
+    <!-- Cart Items -->
+    <div class="cart-items" id="cartItems"></div>
+
+    <!-- Product Card 1 -->
+    <div class="product-card">
+      <span class="badge">8%</span>
+      <button class="favorite"><i class="fa-regular fa-heart"></i></button>
+
+      <div class="product-image">
+        <img
+          src="https://habs.uq.edu.au/files/56369/food1.jpg"
+          alt="Projector Headlights"
+        />
+      </div>
+
+      <div class="product-info">
+        <h3 class="title">Projector Headlights</h3>
+
+        <div class="rating">★★★★☆ <span>(1 review)</span></div>
+
+        <div class="price">
+          <span class="old-price">$26.99</span>
+          <span class="new-price">$21.99</span>
+        </div>
+
+        <div class="status">In Stock</div>
+
+        <button
+          class="add-to-cart"
+          onclick="addToCart('Projector Headlights', 21.99, 'https://habs.uq.edu.au/files/56369/food1.jpg')"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="product-card">
+      <span class="badge">15%</span>
+      <button class="favorite"><i class="fa-regular fa-heart"></i></button>
+
+      <div class="product-image">
+        <img
+          src="https://photo.znews.vn/w660/Uploaded/bpivpawv/2025_09_15/2025_09_14T200333Z_999270430_UP1EL9E1JPV7A_RTRMADP_3_SOCCER_SAUDI_NSR_KHL.JPG"
+          alt="Vision DARTONA Hyper Silver"
+        />
+      </div>
+
+      <div class="product-info">
+        <h3 class="title">Vision 14&quot; DARTONA Hyper Silver</h3>
+
+        <div class="rating">★★★☆☆ <span>(2 reviews)</span></div>
+
+        <div class="price">
+          <span class="old-price">$59.99</span>
+          <span class="new-price">$49.99</span>
+        </div>
+
+        <div class="status">In Stock</div>
+
+        <button
+          class="add-to-cart"
+          onclick="addToCart('Vision 14&quot; DARTONA Hyper Silver', 49.99, 'https://photo.znews.vn/w660/Uploaded/bpivpawv/2025_09_15/2025_09_14T200333Z_999270430_UP1EL9E1JPV7A_RTRMADP_3_SOCCER_SAUDI_NSR_KHL.JPG')"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
